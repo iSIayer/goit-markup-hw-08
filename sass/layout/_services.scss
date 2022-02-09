@@ -1,7 +1,17 @@
 .services-section {
   background-color: $primary-color;
   &__item {
-    flex-basis: calc(100% / 4 - #{$gap});
+    @media screen and(min-width:480px) {
+      flex-basis: unset;
+    }
+
+    @media screen and(min-width:768px) {
+      flex-basis: calc(100% / 2 - #{$gap});
+    }
+
+    @media screen and(min-width:1200px) {
+      flex-basis: calc(100% / 4 - #{$gap});
+    }
   }
   &__item::before {
     content: "";
@@ -21,6 +31,10 @@
     text-transform: uppercase;
     color: $brand-color;
     margin-bottom: 10px;
+
+    @media screen and(max-width:767px) {
+      text-align: center;
+    }
   }
 }
 
