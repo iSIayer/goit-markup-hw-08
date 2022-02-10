@@ -3,9 +3,7 @@
   &__item {
     background-color: $primary-color;
 
-    @media screen and(min-width:480px) {
-      flex-basis: calc(100% / 2 - #{$gap});
-    }
+    flex-basis: calc(100% / 2 - #{$gap});
 
     @media screen and(min-width:768px) {
       flex-basis: calc(100% / 3 - #{$gap});
