@@ -118,7 +118,7 @@
         </div>
       </section>
       <!-- ==========================PRODUCTION SECTION========================= -->
-      <!-- <section class="section production-section">
+      <section class="section production-section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="card-set">
@@ -151,19 +151,42 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- ================================TEAM SECTION========================= -->
-      <!-- <section class="section team">
+      <section class="section team">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="card-set">
             <li class="item team__item">
-              <img
-                src="./images/product-designer-img.jpg"
-                alt="Игорь Демьяненко - Product Designer"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ihor-desk@1x.jpg 1x,
+                    ./images/team/ihor-desk@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor-tab@1x.jpg 1x,
+                    ./images/team/ihor-tab@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./images/team/ihor-mob@1x.jpg 1x,
+                    ./images/team/ihor-mob@2x.jpg 2x
+                  "
+                  media="(min-width: 320px)"
+                />
+                <img
+                  src="./images/product-designer-img.jpg"
+                  alt="Игорь Демьяненко - Product Designer"
+                  width="270"
+                  height="260"
+                />
+              </picture>
               <div class="team__wrapper">
                 <h3 class="team__pre-title">Игорь Демьяненко</h3>
                 <p class="team__post">Product Designer</p>
@@ -499,7 +522,7 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
       <!-- =============================CLIENTS SECTION========================= -->
       <!-- <section class="section clients">
         <div class="container">
