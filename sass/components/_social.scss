@@ -1,10 +1,11 @@
 .social-card {
   display: flex;
   align-items: center;
-}
+  justify-content: center;
 
-.social-card__item:not(:last-child) {
-  margin-right: 10px;
+  &__item:not(:last-child) {
+    margin-right: 10px;
+  }
 }
 
 .social-card__link {
@@ -21,10 +22,8 @@
     background-color: $accent-color;
     color: $primary-color;
   }
-}
 
-.social-card__link {
-  .icon {
+  & .social-card__icon {
     fill: currentColor;
   }
 }
