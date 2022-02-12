@@ -1,11 +1,10 @@
-// .pf-card {
-//   flex-basis: unset;
-//     flex-basis: calc(100% / 3 - #{$gap});
-// }
+.pf-card {
+  flex-basis: calc(100% / 3 - #{$gap});
+}
 
 .pf-card__link {
-  //   display: flex;
-  //   flex-direction: column;
+  display: flex;
+  flex-direction: column;
   &:hover,
   &:focus {
     box-shadow: $shadow-card;
