@@ -81,31 +81,49 @@
     </header>
     <!-- ================================MAIN SECTION================================= -->
     <main>
-      <section class="section">
+      <section class="section portfolio">
         <h1 class="visually-hidden">Примеры наших работ</h1>
         <div class="container">
           <ul class="btn-list">
             <li class="btn-list__item">
-              <button class="btn-list__link active" type="button">Все</button>
+              <button
+                class="btn-list__link active"
+                data-group="all"
+                type="button"
+              >
+                Все
+              </button>
             </li>
             <li class="btn-list__item">
-              <button class="btn-list__link" type="button">Веб-сайты</button>
+              <button class="btn-list__link" data-group="website" type="button">
+                Веб-сайты
+              </button>
             </li>
             <li class="btn-list__item">
-              <button class="btn-list__link" type="button">Приложения</button>
+              <button class="btn-list__link" data-group="app" type="button">
+                Приложения
+              </button>
             </li>
             <li class="btn-list__item">
-              <button class="btn-list__link" type="button">Дизайн</button>
+              <button class="btn-list__link" data-group="design" type="button">
+                Дизайн
+              </button>
             </li>
             <li class="btn-list__item">
-              <button class="btn-list__link" type="button">Маркетинг</button>
+              <button
+                class="btn-list__link"
+                data-group="marketing"
+                type="button"
+              >
+                Маркетинг
+              </button>
             </li>
           </ul>
 
           <!-- ==========================CONTAINER CARDS============================== -->
 
-          <ul class="card-set">
-            <li class="item pf-card">
+          <ul id="cards_container" class="card-set">
+            <li data-group="website" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
@@ -152,7 +170,7 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="design" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
@@ -160,10 +178,33 @@
                 rel="noopener noreferrer"
               >
                 <div class="pf-card__thumb">
-                  <img
-                    src="./images/design.jpg"
-                    alt="Постер Нью-Орлеан против Голд-Стар"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-2@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-2@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-2@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-2@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-2@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-2@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img
+                      src="./images/portfolio-desk-2@1x.jpg"
+                      alt="Постер Нью-Орлеан против Голд-Стар"
+                    />
+                  </picture>
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения
@@ -181,17 +222,37 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="app" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="pf-card__thumb">
-                  <img
-                    src="./images/app-rest-seafood.jpg"
-                    alt="Ресторан Сиафуд"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-3@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-3@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-3@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-3@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-3@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-3@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="#" alt="Ресторан Сиафуд" />
+                  </picture>
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения
@@ -209,17 +270,37 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="marketing" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="pf-card__thumb">
-                  <img
-                    src="./images/marketing-project-prime.jpg"
-                    alt="Проект Прайм"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-4@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-4@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-4@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-4@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-4@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-4@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="#" alt="Проект Прайм" />
+                  </picture>
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения
@@ -237,17 +318,38 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="app" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="pf-card__thumb">
-                  <img
-                    src="./images/app-project-boxes.jpg"
-                    alt="Проект Боксы"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-5@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-5@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-5@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-5@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-5@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-5@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="#" alt="Проект Боксы" />
+                  </picture>
+
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения
@@ -265,17 +367,38 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="website" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="pf-card__thumb">
-                  <img
-                    src="./images/website-inspiration-has-no-borders.jpg"
-                    alt="У вдохновения нет границ"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-6@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-6@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-6@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-6@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-6@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-6@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="#" alt="У вдохновения нет границ" />
+                  </picture>
+
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения
@@ -293,17 +416,37 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="design" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="pf-card__thumb">
-                  <img
-                    src="./images/design-limited-edition.jpg"
-                    alt="издание лимитед эдишн"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-7@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-7@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-7@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-7@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-7@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-7@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="#" alt="издание лимитед эдишн" />
+                  </picture>
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения
@@ -321,17 +464,37 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="marketing" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="pf-card__thumb">
-                  <img
-                    src="./images/marketing-project-lab.jpg"
-                    alt="Проект ЛАБ"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-8@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-8@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-8@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-8@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-8@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-8@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="#" alt="Проект ЛАБ" />
+                  </picture>
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения
@@ -349,17 +512,37 @@
                 </div>
               </a>
             </li>
-            <li class="item pf-card">
+            <li data-group="app" class="item pf-card">
               <a
                 class="pf-card__link"
                 href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 ><div class="pf-card__thumb">
-                  <img
-                    src="./images/app-growing-business.jpg"
-                    alt="Растущий бизнес"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desk-9@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desk-9@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tab-9@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tab-9@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mob-9@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mob-9@2x.jpg 2x
+                      "
+                      media="(min-width: 320px)"
+                    />
+                    <img src="" alt="Растущий бизнес" />
+                  </picture>
                   <div class="pf-card__overlay">
                     <p class="pf-card__info">
                       Технокряк это современная площадка распространения

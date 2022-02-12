@@ -1,9 +1,21 @@
 .btn-list {
-  @include centerFlex();
+  display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   &__item:not(:last-child) {
     margin-right: 8px;
+    margin-bottom: 15px;
+  }
+  @media screen and (max-width: 767px) {
+    margin-top: -15px;
+  }
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
   }
 }
 
@@ -17,7 +29,7 @@
   color: $brand-color;
   padding: 6px 22px;
   border-radius: 4px;
-  background-color: $button-color;
+  background-color: $background-precolor;
   transition: color$transition-cubic, background-color$transition-cubic,
     box-shadow$transition-cubic;
   &:hover,
