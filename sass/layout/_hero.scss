@@ -5,37 +5,71 @@
   @media screen and (min-width: 1200px) {
     margin-top: 80px;
   }
+  @media screen and (max-height: 479px) {
+    margin-top: 0;
+  }
 
   &__container {
     padding-top: 118px;
     padding-bottom: 118px;
     margin: 0 auto;
     max-width: 1600px;
-    background-image: $gradient-hero, url(../../images/hero/hero-mob@1x.jpg);
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../../images/hero/hero-mob@1x.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: $gradient-hero, url(../../images/hero/hero-mob@2x.jpg);
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-mob@2x.jpg);
     }
     @media screen and (min-width: 768px) {
-      background-image: $gradient-hero, url(../../images/hero/hero-tab@1x.jpg);
+      max-width: 768px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-tab@1x.jpg);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        // background-image: $gradient-hero, url(../../images/hero/hero-tab@2x.jpg);
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
+          url(../../images/hero/hero-tab@2x.jpg);
       }
     }
     @media screen and (min-width: 1200px) {
       padding-top: 200px;
       padding-bottom: 200px;
-      background-image: $gradient-hero, url(../../images/hero/hero-desc@1x.jpg);
+      max-width: 1600px;
+      background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url(../../images/hero/hero-desc@1x.jpg);
       @media (min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
-        background-image: $gradient-hero,
+        background-image: linear-gradient(
+            to right,
+            rgba(47, 48, 58, 0.4),
+            rgba(47, 48, 58, 0.4)
+          ),
           url(../../images/hero/hero-desc@2x.jpg);
       }
     }
