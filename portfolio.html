@@ -68,7 +68,7 @@
             </li>
           </ul>
           <button
-            class="header__mobile-btn header__mobile-btn--open"
+            class="header__mobile-btn mob-page__btn--open"
             type="button"
             data-menu-open
           >
@@ -76,6 +76,64 @@
               <use href="./images/icons.svg#icon-menu-open-mobile"></use>
             </svg>
           </button>
+        </div>
+      </div>
+      <div class="mob-page is-hidden" data-menu>
+        <button
+          class="mob-page__btn mob-page__btn--close"
+          type="button"
+          data-menu-close
+        >
+          <svg class="mob-page__close" width="40" height="40">
+            <use href="./images/icons.svg#icon-menu-close-mobile"></use>
+          </svg>
+        </button>
+        <nav class="mob-page__nav">
+          <ul class="mob-page__list">
+            <li class="mob-page__item">
+              <a class="mob-page__link" href="./index.html">Студия</a>
+            </li>
+            <li class="mob-page__item">
+              <a class="mob-page__link mob--current" href="./portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="mob-page__item">
+              <a class="mob-page__link" href="#address">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="mob-page__connect">
+          <ul class="mob-page__contacts">
+            <li class="mob-page__contacts-item">
+              <a
+                class="mob-page__contacts--link mob-page__contacts-tel"
+                href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mob-page__contacts-item">
+              <a
+                class="mob-page__contacts--link"
+                href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="social-mobile">
+            <li class="social-mobile__item">
+              <a class="social-mobile__link" href="#">Instagram</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link" href="#">Twitter</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link" href="#">Facebook</a>
+            </li>
+            <li class="social-mobile__item">
+              <a class="social-mobile__link" href="#">LinkedIn</a>
+            </li>
+          </ul>
         </div>
       </div>
     </header>
@@ -686,5 +744,7 @@
         </div>
       </div>
     </footer>
+    <script src="./js/mob-menu.js"></script>
+    <script src="./js/sort.js"></script>
   </body>
 </html>
