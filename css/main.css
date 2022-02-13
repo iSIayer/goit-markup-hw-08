@@ -1383,6 +1383,8 @@ body {
 
 .mob-page__btn:hover, .mob-page__btn:focus {
   fill: #2196f3;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 
 .mob-page__btn--open {

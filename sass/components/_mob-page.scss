@@ -19,6 +19,7 @@
     &:hover,
     &:focus {
       fill: $accent-color;
+      transform: rotate(270deg);
     }
     &--open {
       padding-top: 10px;
