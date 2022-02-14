@@ -5,3 +5,7 @@ body {
   letter-spacing: 0.03em;
   color: $text-color;
 }
+
+.no-scroll {
+  overflow: hidden;
+}

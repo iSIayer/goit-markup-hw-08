@@ -23,6 +23,7 @@
 .pf-card__link {
   display: flex;
   flex-direction: column;
+  height: 100%;
   &:hover,
   &:focus {
     box-shadow: $shadow-card;
