@@ -7,10 +7,11 @@
 
 .pf-card {
   @media screen and(min-width:480px) {
-    flex-basis: unset;
+    display: block;
   }
 
-  @media screen and(min-width:768px) {
+  @media screen and(min-width:768px) and (max-width: 1199px) {
+    display: flex;
     flex-basis: calc(100% / 2 - #{$gap});
   }
 
@@ -43,6 +44,7 @@
   position: absolute;
   transform: translateY(100%);
   transition: transform $transition-cubic;
+  height: 100%;
   display: flex;
   align-content: center;
   top: 0;
@@ -62,6 +64,7 @@
 .pf-card__wrapper {
   padding: 20px 24px;
   border: 1px solid $border-cardscolor;
+  flex-grow: 1;
 }
 
 .pf-card__title {
