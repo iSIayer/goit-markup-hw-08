@@ -442,6 +442,7 @@ body {
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0 auto;
+  width: 100%;
   max-width: 1600px;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero/hero-mob@1x.jpg);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero-mob@1x.jpg);
